@@ -559,24 +559,29 @@ p {
   color: #fff;
 }
 
-.hero-trustbar {
+.hero-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
-.hero-trust-item {
+.hero-badge {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.85rem;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--radius-pill);
+  background: rgba(14, 37, 69, 0.04);
+  border: 1px solid var(--color-border);
+  font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-navy-800);
+  color: var(--color-text-muted);
 }
 
-.hero-trust-item svg {
-  color: var(--color-teal-600);
-  flex-shrink: 0;
+.hero-badge b {
+  color: var(--color-navy-900);
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .hero-visual {
@@ -586,35 +591,6 @@ p {
 .hero-visual svg {
   width: 100%;
   height: auto;
-}
-
-.hero-float-card {
-  position: absolute;
-  background: #fff;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  padding: var(--space-4) var(--space-5);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-navy-900);
-}
-
-.hero-float-card.card-1 {
-  top: 6%;
-  left: -4%;
-}
-
-.hero-float-card.card-2 {
-  bottom: 8%;
-  right: -6%;
-}
-
-.hero-float-card .icon-badge {
-  width: 38px;
-  height: 38px;
 }
 
 /* ---------- Icon badges (shared) ---------- */
@@ -770,11 +746,14 @@ svg:has(> use) {
   gap: var(--space-4);
   padding: var(--space-5);
   border-radius: var(--radius-md);
-  transition: background var(--transition-base);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .why-item:hover {
-  background: rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow-sm);
+  border-color: transparent;
 }
 
 .why-item h3 {
@@ -854,19 +833,19 @@ svg:has(> use) {
 .director-message blockquote {
   margin: 0 0 var(--space-6);
   font-size: 1.15rem;
-  color: var(--color-text-inverse);
+  color: var(--color-navy-800);
   font-style: italic;
   line-height: 1.7;
 }
 
 .director-name {
   font-weight: 800;
-  color: #fff;
+  color: var(--color-navy-900);
   font-size: 1.05rem;
 }
 
 .director-title {
-  color: var(--color-gold-500);
+  color: var(--color-text-muted);
   font-size: 0.88rem;
   font-weight: 600;
 }
@@ -1312,9 +1291,6 @@ svg:has(> use) {
     margin: 0 auto var(--space-5);
   }
 
-  .hero-float-card {
-    display: none;
-  }
 }
 
 @media (max-width: 720px) {
