@@ -660,6 +660,25 @@ p {
   height: 18px;
 }
 
+/* All sprite-referenced icons render as line icons by default (fill:none,
+   stroke:currentColor). Individual shapes inside a symbol can still opt
+   into a solid fill (e.g. the WhatsApp glyph, social badges, quote marks)
+   via their own fill="currentColor" stroke="none" attributes, which take
+   precedence over this inherited default. */
+.icon,
+.icon-sm,
+.icon-badge svg,
+.social-icon svg,
+.whatsapp-float svg,
+.quote-icon svg,
+svg:has(> use) {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 /* ---------- 8. About ---------- */
 .about-grid {
   display: grid;

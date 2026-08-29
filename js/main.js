@@ -47,6 +47,15 @@
       if (cfg.officeHours) el.textContent = cfg.officeHours;
     });
 
+    // Legal / registration identifiers (footer). Hidden automatically if empty.
+    var legalEl = document.getElementById("footerLegalIds");
+    if (legalEl) {
+      var parts = [];
+      if (cfg.cin) parts.push("CIN: " + cfg.cin);
+      if (cfg.gstin) parts.push("GSTIN: " + cfg.gstin);
+      legalEl.textContent = parts.length ? " · " + parts.join(" · ") : "";
+    }
+
     // Social links
     if (cfg.social) {
       document.querySelectorAll('[data-config="social-linkedin"]').forEach(function (el) {

@@ -21,11 +21,11 @@ window.ZEIMO_CONFIG = {
   companyShortName: "Zeimo Global Ventures",
   tagline: "Smarter Customer Acquisition & Business Operations",
 
-  // Contact details — REPLACE with official details when available
+  // Contact details
   address: {
-    line1: "Add company address line 1",
-    line2: "Add city, state, PIN code, country",
-    full: "Add company address line 1, Add city, state, PIN code, country"
+    line1: "Lone Complex, First Floor, Shop No. 3, Sopernaghama",
+    line2: "Qaziabad – 193302, Near Hassan Sumo Stand",
+    full: "Lone Complex, First Floor, Shop No. 3, Sopernaghama, Qaziabad – 193302, Near Hassan Sumo Stand"
   },
   phone: {
     display: "+91 00000 00000",
@@ -36,7 +36,7 @@ window.ZEIMO_CONFIG = {
   // WhatsApp — single configuration point.
   // Replace ONLY this number; every WhatsApp link on the site reads from here.
   whatsapp: {
-    number: "910000000000", // digits only, country code first, no + or spaces
+    number: "916005680415", // digits only, country code first, no + or spaces
     defaultMessage: "Hello Zeimo Global Ventures, I would like to know more about your services."
   },
 
@@ -51,5 +51,10 @@ window.ZEIMO_CONFIG = {
   officeHours: "Monday – Saturday, 9:30 AM – 6:30 PM",
 
   // Business/registration line for footer (optional, safe placeholder)
-  registeredOffice: "India"
+  registeredOffice: "India",
+
+  // Legal / registration identifiers shown in the footer.
+  // Leave either value as "" to hide that line automatically.
+  cin: "U82200JK2026PTC019793",
+  gstin: "01AADCZ1469L1Z6"
 };
