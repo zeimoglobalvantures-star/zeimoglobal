@@ -28,8 +28,8 @@ window.ZEIMO_CONFIG = {
     full: "Lone Complex, First Floor, Shop No. 3, Sopernaghama, Qaziabad – 193302, Near Hassan Sumo Stand"
   },
   phone: {
-    display: "+91 60056 80415",
-    dial: "+916005680415"
+    display: "+91 00000 00000",
+    dial: "+910000000000"
   },
   email: "info@zeimoglobalventures.com",
 
