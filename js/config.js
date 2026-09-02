@@ -31,7 +31,7 @@ window.ZEIMO_CONFIG = {
     display: "+91 60056 80415",
     dial: "+916005680415"
   },
-  email: "info@zeimoglobalventures.com",
+  email: "contact@zeimo.in",
 
   // WhatsApp — single configuration point.
   // Replace ONLY this number; every WhatsApp link on the site reads from here.
@@ -42,7 +42,7 @@ window.ZEIMO_CONFIG = {
 
   // Social media — replace "#" with live profile URLs when available
   social: {
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/company/zeimo-global-ventures-pvt-ltd",
     facebook: "#",
     instagram: "#"
   },
